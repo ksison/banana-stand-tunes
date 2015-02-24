@@ -1,0 +1,17 @@
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+.build/
+
+# Dependency directory
+# Deployed apps should consider commenting this line out:
+# see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
+node_modules/*
+npm-debug.log
+
+# Application-specific modules to avoid the ../../../../../../ relative paths problem.
+!node_modules/app
+
+# Generated documentation
+doc/
