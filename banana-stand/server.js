@@ -10,13 +10,16 @@ engine.bootstrap({
     version: '0.0.1'
 }, function () {
 
-    engine.server.pre(restify.pre.sanitizePath()); // sanitize paths (e.g. "/admin/" will result in "/admin")
-    engine.server.use(restify.bodyParser()); // body parser
+    // default route, return the index.html
+    engine.server.get('/', restify.serveStatic({
+        directory: './public',
+        default: 'index.html'
+    }));
 
-    // route for static files
-    engine.server.get(/\/?.*/, restify.serveStatic({
-        "default":   'index.html',
-        "directory": ".banana-stand/public"
+    // Route for css, js files
+    // FIX js file is served but not used by index... how?
+    engine.server.get(/.css|.js/, restify.serveStatic({
+        directory: './public/'
     }));
 
     console.log('Server is online...');
