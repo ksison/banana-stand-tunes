@@ -1,0 +1,14 @@
+{
+  "name": "song-api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "vvps-engine": "0.0.1"
+  },
+  "scripts": {
+    "setup": "npm link ../vvps-engine"
+  },
+  "author": "",
+  "license": "ISC"
+}

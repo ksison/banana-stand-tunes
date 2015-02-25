@@ -10,8 +10,8 @@ module.exports = function (grunt) {
                 }
             },
             bst: {
-                src: 'js/bst.js',
-                dest: '.build/bst.js'
+                src: './banana-stand/app/public/js/bst.js',
+                dest: './banana-stand/public/.build/bst.js'
             }
         }
     });
