@@ -23,5 +23,5 @@
       }
     }
   },
-  "DB_URI": "mongodb://vvps-mongooser:black0ps@ds039441.mongolab.com:39441/vvps-dev"
+  "DB_URI": "mongodb://loose-seal:banana@ds047901.mongolab.com:47901/banana-stand-tunes"
 }
