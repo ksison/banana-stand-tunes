@@ -5,6 +5,7 @@ var server = require('vvps-engine').server,
 
 /**
  * Get all songs
+ * TODO search params -- title & artist match
  * @param req
  * @param res
  * @param next
@@ -22,19 +23,19 @@ songController.getMany = function (req, res, next) {
 
 
 /**
- * Get a shark by its id
+ * Get a song by its id
  * @param req
  * @param res
  * @param next
  */
 songController.getOne = function (req, res, next) {
-    Song.findById(req.params.id, function (err, shark) {
+    Song.findById(req.params.id, function (err, song) {
 
         if (err) {
             return next(err);
         }
         else {
-            res.json(shark);
+            res.json(song);
         }
     });
 };
