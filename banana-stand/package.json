@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "musicmetadata": "^1.0.0",
     "vvps-engine": "0.0.1"
   },
   "scripts": {
