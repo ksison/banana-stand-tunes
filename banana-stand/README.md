@@ -6,6 +6,14 @@
 npm run setup && npm start
 ```
 
+### To run importer
+From banana-stand sub folder
+```
+node import-scripts/song-importer.js <path to directory with music>
+```
+>Note: The importer is still in a primitive stage, so don't give it a huge folder.
+> Normandyxo tried it with 279 songs (3.72 GB) and had no problems!
+
 ###Example of GET
 ```
 curl localhost:8080/v1/songs/:id
