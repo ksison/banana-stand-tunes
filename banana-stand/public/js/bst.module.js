@@ -7,4 +7,4 @@ module.exports = ng.module('bst', [
     ])
     .config(require('./bst.config.js'))
     .run(require('./bst.run.js'))
-    .constant('VERSION', require('../package.json').version);
+    .constant('VERSION', require('../../../package.json').version);
