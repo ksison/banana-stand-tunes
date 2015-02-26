@@ -1,0 +1,21 @@
+{
+  "name": "vvps-engine",
+  "version": "0.0.1",
+  "description": "Tool set and server bootstrap for vvps backend services / api.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "taytay",
+  "dependencies": {
+    "restify": "^2.8.4",
+    "mongoose": "^3.8.21",
+    "lodash": "^2.4.1",
+    "nconf": "^0.7.1",
+    "url": "^0.10.2",
+    "string": "^3.0.0",
+    "glob": "^4.3.5",
+    "path": "^0.11.14",
+    "fs": "0.0.2"
+  }
+}

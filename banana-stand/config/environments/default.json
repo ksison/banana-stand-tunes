@@ -1,0 +1,27 @@
+{
+  "SERVER_PORT": 8080,
+  "RESOURCES": {
+    "TEST": {
+      "CONTROLLER": "song.controller",
+      "ROUTES": {
+        "/v1/songs/:id": [
+          {
+            "METHOD": "GET",
+            "VALUE": "getOne"
+          }
+        ],
+        "/v1/songs/": [
+          {
+            "METHOD": "GET",
+            "VALUE": "getMany"
+          },
+          {
+            "METHOD": "POST",
+            "VALUE": "post"
+          }
+        ]
+      }
+    }
+  },
+  "DB_URI": "mongodb://loose-seal:banana@ds047901.mongolab.com:47901/banana-stand-tunes"
+}

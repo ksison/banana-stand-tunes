@@ -15,3 +15,10 @@ npm-debug.log
 
 # Generated documentation
 doc/
+
+# Webstorm
+.idea
+.idea/*
+
+# vvps engine
+vvps-engine/node_modules/*
