@@ -3,7 +3,7 @@
 var ng = require('angular');
 
 module.exports = ng.module('bst', [
-        require('./common/common-controllers.module.js').name
+        require('./common/common-controllers.module').name
     ])
     .config(require('./bst.config.js'))
     .run(require('./bst.run.js'))

@@ -22,3 +22,5 @@ doc/
 
 # vvps engine
 vvps-engine/node_modules/*
+
+banana-stand/node_modules/*
